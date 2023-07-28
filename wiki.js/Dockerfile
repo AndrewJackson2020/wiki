@@ -1,0 +1,10 @@
+FROM lscr.io/linuxserver/wikijs:latest
+ENV PUID=1000
+ENV PGID=1000
+ENV TZ=Etc/UTC
+ENV DB_TYPE=postgres
+ENV DB_HOST=some-postgres 
+ENV DB_PORT=5432
+ENV DB_NAME=wikijs
+ENV DB_USER=postgres
+ENV DB_PASS=mysecretpassword

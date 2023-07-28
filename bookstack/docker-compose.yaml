@@ -7,7 +7,7 @@ services:
     environment:
       - PUID=1000
       - PGID=1000
-      - APP_URL="http://127.0.0.1:6875"
+      - APP_URL="http://127.0.0.1:6875/wiki"
       - DB_HOST=bookstack_db
       - DB_PORT=3306
       - DB_USER=bookstack
