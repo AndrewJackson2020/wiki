@@ -46,6 +46,16 @@ run_docker_containers () {
 main_commands () {
 	case $1 in 
 
+		"push_data_to_bucket")
+			# TODO Delete data first if any?
+			gsutil cp -r ./data/* gs://wiki_js_template_data
+			;;
+
+		"pull_data_from_bucket")
+			# TODO Delete data first if any?
+			gsutil cp -r gs://wiki_js_template_data ./data/ 
+			;;
+
 		"--help")
 			help
 			;;
