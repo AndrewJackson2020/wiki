@@ -8,6 +8,8 @@ Commands:
 	run
 	stop
 	update_host (not yet implemented)
+	push_data_to_bucket
+	pull_data_from_bucket
 "
 }
 
